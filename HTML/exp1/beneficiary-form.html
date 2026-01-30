@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beneficiary Registration</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    "
+  >
+    <h2 style="text-align: center; color: #333">
+      New Beneficiary Registration
+    </h2>
+    <form
+      action="#"
+      method="post"
+      style="
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
+      "
+    >
+      <label for="fname" style="font-weight: bold">Full Name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        required
+        placeholder="Enter full name"
+        style="
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0 15px;
+          box-sizing: border-box;
+        "
+      /><br /><br />
+
+      <label for="cardnum" style="font-weight: bold">Ration Card Number:</label
+      ><br />
+      <input
+        type="text"
+        id="cardnum"
+        name="cardnum"
+        required
+        pattern="[A-Z0-9]{10}"
+        title="10 digit Alphanumeric ID"
+        style="
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0 15px;
+          box-sizing: border-box;
+        "
+      /><br /><br />
+
+      <label for="fsize" style="font-weight: bold">Family Size:</label><br />
+      <input
+        type="number"
+        id="fsize"
+        name="fsize"
+        min="1"
+        max="20"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0 15px;
+          box-sizing: border-box;
+        "
+      /><br /><br />
+
+      <label for="cat" style="font-weight: bold">Category:</label><br />
+      <select
+        id="cat"
+        name="cat"
+        style="
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0 15px;
+          box-sizing: border-box;
+        "
+      >
+        <option value="apl">APL</option>
+        <option value="bpl">BPL</option>
+        <option value="aay">Antyodaya</option></select
+      ><br /><br />
+
+      <label for="address" style="font-weight: bold">Residential Address:</label
+      ><br />
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="30"
+        required
+        style="
+          width: 100%;
+          padding: 8px;
+          margin: 5px 0 15px;
+          box-sizing: border-box;
+          font-family: inherit;
+        "
+      ></textarea
+      ><br /><br />
+
+      <input
+        type="submit"
+        value="Register Beneficiary"
+        style="
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        "
+      />
+      <input
+        type="reset"
+        value="Clear Form"
+        style="
+          background-color: #f44336;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: 10px;
+        "
+      />
+    </form>
+    <p style="text-align: center">
+      <a href="index.html" style="text-decoration: none; color: #333"
+        >Back to Home</a
+      >
+    </p>
+  </body>
+</html>
